@@ -1,0 +1,88 @@
+/vendor
+/node_modules
+/.env
+/.phpunit.result.cache
+/.DS_Store
+/public/storage
+/storage/*
+/storage/debugbar
+
+# Laravel specific
+/vendor
+/node_modules
+/public/storage
+/public/hot
+/storage/*.key
+/.idea
+/.vscode
+.env
+.env.*
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+phpunit.result.cache
+.phpunit.result.cache
+coverage/
+
+# Composer and Node dependencies
+composer.lock
+yarn.lock
+package-lock.json
+
+# Laravel Swoole specific
+/storage/laravels.pid
+
+# Ignore compiled assets and cache files
+/public/mix-manifest.json
+/public/hot
+/public/css
+/public/js
+/public/fonts
+/public/images
+
+# Laravel cache
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+
+# Ignore IDE and editor specific files
+/.phpstorm.meta.php
+/.vscode
+/.phpunit.result.cache
+/.vagrant
+/.DS_Store
+Thumbs.db
+
+# Ignoring any compiled code
+/vendor/
+/node_modules/
+
+# Ignoring logs and dumps
+/storage/logs/*
+/storage/app/*.log
+/storage/debugbar
+/storage/clockwork
+*.log
+
+# Ignoring dotenv files
+.env
+.env.example
+
+# Ignoring cache files
+/.phpunit.result.cache
+.phpunit.result.cache
+/.cache
+
+# Ignoring IDE-specific files
+.idea/
+.vscode/
+
+# Ignoring testing files
+/tests/_output
+/tests/_support/_generated
+
+# Other system files
+.DS_Store
+Thumbs.db

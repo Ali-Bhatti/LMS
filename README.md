@@ -1,2 +1,2 @@
 # LMS
-This is a Learning Managment System
+This is a Learning Management System
