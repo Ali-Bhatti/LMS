@@ -24,33 +24,12 @@ Common Issues Found
 4. Access env files from here [env file for local](https://drive.google.com/file/d/1OL7x-_uv0xmjMVXdfovIgQE7_-zvTdyG/view?usp=sharing) , [env file for prod](https://drive.google.com/file/d/113ouePBZBAu9BoJQaLF7keNVamG4783F/view?usp=sharing)
 5. Run `composer install` to install all the required packages.
 6. Run `php artisan key:generate` to generate the application key.
-7. Before Running the migration script open the **PHP admin** and run the following commands
-````
-CREATE DATABASE u547430766_lms;
-USE u547430766_lms;
-
-CREATE TABLE `setting_translations` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `setting_id` int(11) NOT NULL,
-  `local` int(11) NOT NULL,
-  `value` varchar(128) NOT NULL,
-  PRIMARY KEY (`id`)
-);
-
-````
-7. Run `php artisan migrate` to migrate the database.
-8. Run `php artisan db:seed` to seed the database (i.e., to populate the data in tables).
-````
-if gets an error at step # 8 then comment the following lines in `file database\seeders\DatabaseSeeder.php`
-
-line to comment: `$this->call(makeFakeData::class);`
-
-Then run the command again.
-````
-
-9. Run `php artisan serve` to start the server.
-10. Open your browser and navigate to `http://localhost:8000` to access the application
-11. You can login with following credentials
+7. Open the **PHP admin**
+8. Download the DB DUMP from this [link](https://drive.google.com/file/d/1Ov5CLIhuuwDQ72-uKbzXKgGhUfjtiOTf/view?usp=sharing)
+9. Import the DB DUMP in your local DB, using  **PHP admin**.
+10. Run `php artisan serve` to start the server.
+11. Open your browser and navigate to `http://localhost:8000` to access the application
+12. You can login with following credentials
 ```
 login: admin@gmail.com
 password: 123456
