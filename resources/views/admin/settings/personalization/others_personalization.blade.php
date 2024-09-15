@@ -20,7 +20,7 @@
 
         <div class="row">
             <div class="col-12 col-md-6">
-                <h5 class="text-dark font-20">{{ trans('update.guarantee') }}</h5>
+                <!-- <h5 class="text-dark font-20">{{ trans('update.guarantee') }}</h5>
 
                 <div class="form-group custom-switches-stacked mb-0 mt-2">
                     <label class="custom-switch pl-0">
@@ -29,7 +29,7 @@
                         <span class="custom-switch-indicator"></span>
                         <label class="custom-switch-description mb-0 cursor-pointer" for="showGuaranteeTextSwitch">{{ trans('admin/main.show') }}</label>
                     </label>
-                </div>
+                </div> -->
 
                 <h5 class="text-dark font-20 mt-5">{{ trans('update.avatar_settings') }}</h5>
 

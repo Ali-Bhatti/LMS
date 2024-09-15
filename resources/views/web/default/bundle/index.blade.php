@@ -225,12 +225,12 @@
 
                         </form>
 
-                        @if(!empty(getOthersPersonalizationSettings('show_guarantee_text')) and getOthersPersonalizationSettings('show_guarantee_text'))
+                        <!-- @if(!empty(getOthersPersonalizationSettings('show_guarantee_text')) and getOthersPersonalizationSettings('show_guarantee_text'))
                             <div class="mt-20 d-flex align-items-center justify-content-center text-gray">
                                 <i data-feather="thumbs-up" width="20" height="20"></i>
                                 <span class="ml-5 font-14">{{ trans('product.guarantee_text') }}</span>
                             </div>
-                        @endif
+                        @endif -->
 
                         <div class="mt-40 p-10 rounded-sm border row align-items-center favorites-share-box">
 
