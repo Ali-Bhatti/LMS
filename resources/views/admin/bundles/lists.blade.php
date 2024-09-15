@@ -239,7 +239,7 @@
 
                                             <td class="text-left">{{ $bundle->teacher->full_name }}</td>
 
-                                            <td>
+                                            <!-- <td>
                                                 @if(!empty($bundle->price) and $bundle->price > 0)
                                                     <span class="mt-0 mb-1">
                                                         {{ handlePrice($bundle->price, true, true) }}
@@ -251,7 +251,7 @@
                                                 @else
                                                     {{ trans('public.free') }}
                                                 @endif
-                                            </td>
+                                            </td> -->
                                             <td>
                                                 <span class="text-primary mt-0 mb-1 font-weight-bold">
                                                     {{ $bundle->sales->count() }}

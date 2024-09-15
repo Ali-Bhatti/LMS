@@ -71,7 +71,7 @@
                 </div>
             </div>
 
-            <div class="webinar-price-box mt-25">
+            <!-- <div class="webinar-price-box mt-25">
                 @if(!empty($isRewardCourses) and !empty($webinar->points))
                     <span class="text-warning real font-14">{{ $webinar->points }} {{ trans('update.points') }}</span>
                 @elseif(!empty($webinar->price) and $webinar->price > 0)
@@ -84,7 +84,7 @@
                 @else
                     <span class="real font-14">{{ trans('public.free') }}</span>
                 @endif
-            </div>
+            </div> -->
         </figcaption>
     </figure>
 </div>

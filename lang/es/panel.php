@@ -72,7 +72,8 @@ return [
     'my_comments_no_result_hint' => "Tus comentarios ayudarán a mejorar la calidad de la comunidad ...",
 
     'my_purchases' => 'Mis compras',
-    'no_result_purchases' => '¡Curso no comprada!',
+    'no_result_purchases' => '¡No hay curso!',
+    'my_courses' => 'Mis cursos',
     'no_result_purchases_hint' => 'Empieza a aprender de los mejores Formadores y disfruta ...',
     'purchase_date' => 'Fecha de compra',
     'purchased' => 'Comprado',

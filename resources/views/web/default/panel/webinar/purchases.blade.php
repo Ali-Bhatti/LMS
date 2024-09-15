@@ -40,7 +40,7 @@
 
     <section class="mt-25">
         <div class="d-flex align-items-start align-items-md-center justify-content-between flex-column flex-md-row">
-            <h2 class="section-title">{{ trans('panel.my_purchases') }}</h2>
+            <h2 class="section-title">{{ trans('panel.my_courses') }}</h2>
         </div>
 
         @if(!empty($sales) and !$sales->isEmpty())

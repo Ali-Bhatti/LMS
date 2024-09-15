@@ -167,7 +167,7 @@
                                 @endforeach
                             @endif
 
-                            @if($course->price > 0)
+                            <!-- @if($course->price > 0)
                                 <div id="priceBox" class="d-flex align-items-center justify-content-center mt-20 {{ !empty($activeSpecialOffer) ? ' flex-column ' : '' }}">
                                     <div class="text-center">
                                         @php
@@ -204,7 +204,7 @@
                                 <div class="d-flex align-items-center justify-content-center mt-20">
                                     <span class="font-36 text-primary">{{ trans('public.free') }}</span>
                                 </div>
-                            @endif
+                            @endif -->
 
                             @php
                                 $canSale = ($course->canSale() and !$hasBought);

@@ -72,7 +72,8 @@ return [
     'my_comments_no_result_hint' => "Your comments will help to improve community quality...",
 
     'my_purchases' => 'My purchases',
-    'no_result_purchases' => 'No Purchased Course!',
+    'my_courses' => 'My courses',
+    'no_result_purchases' => 'No Course!',
     'no_result_purchases_hint' => 'Start learning from the best instructors and enjoy...',
     'purchase_date' => 'Purchase Date',
     'purchased' => 'Purchased',

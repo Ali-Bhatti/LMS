@@ -170,7 +170,7 @@
 
                         @can('panel_webinars_my_purchases')
                             <li class="mt-5 {{ (request()->is('panel/webinars/purchases')) ? 'active' : '' }}">
-                                <a href="/panel/webinars/purchases">{{ trans('panel.my_purchases') }}</a>
+                                <a href="/panel/webinars/purchases">{{ trans('panel.my_courses') }}</a>
                             </li>
                         @endcan
 
