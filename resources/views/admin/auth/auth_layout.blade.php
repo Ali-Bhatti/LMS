@@ -43,7 +43,7 @@
             <div class="text-light p-5 pb-2">
               <div class="mb-2 pb-3">
                 <!-- <h1 class="mb-2 display-4 font-weight-bold">CityTech Marketing Agency</h1> -->
-                <h5 class="font-weight-normal text-muted-transparent">fully-featured educational platform</h5>
+                <h5 class="font-weight-normal text-muted-transparent">Learning Management Center</h5>
               </div>
               <!-- All rights reserved for <a class="text-light bb" target="_blank" href="https://citytech.in/">CityTech Marketing Agency</a> -->
             </div>

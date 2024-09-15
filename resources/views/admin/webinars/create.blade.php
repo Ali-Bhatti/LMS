@@ -278,7 +278,7 @@
                                         <div class="col-12 col-md-6">
 
 
-                                            <div class="form-group mt-15">
+                                            <!-- <div class="form-group mt-15">
                                                 <label class="input-label">{{ trans('update.sales_count_number') }}</label>
                                                 <input type="number" name="sales_count_number" value="{{ !empty($webinar) ? $webinar->sales_count_number : old('sales_count_number') }}" class="form-control @error('sales_count_number')  is-invalid @enderror"/>
                                                 @error('sales_count_number')
@@ -287,7 +287,7 @@
                                                 </div>
                                                 @enderror
                                                 <p class="mt-1 text-muted text-gray">{{ trans('update.product_sales_count_number_hint') }}</p>
-                                            </div>
+                                            </div> -->
 
                                             <div class="form-group mt-15">
                                                 <label class="input-label">{{ trans('public.capacity') }}</label>
@@ -431,7 +431,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="form-group mt-15">
+                                            <!-- <div class="form-group mt-15">
                                                 <label class="input-label">{{ trans('update.access_days') }}</label>
                                                 <input type="text" name="access_days" value="{{ !empty($webinar) ? $webinar->access_days : old('access_days') }}" class="form-control @error('access_days')  is-invalid @enderror"/>
                                                 @error('access_days')
@@ -440,7 +440,7 @@
                                                 </div>
                                                 @enderror
                                                 <p class="mt-1">- {{ trans('update.access_days_input_hint') }}</p>
-                                            </div>
+                                            </div> -->
 
                                             <!-- <div class="form-group mt-15">
                                                 <label class="input-label">{{ trans('public.price') }} ({{ $currency }})</label>
@@ -553,7 +553,7 @@
                                 </section>
 
                                 @if(!empty($webinar))
-                                    <section class="mt-30">
+                                    <!-- <section class="mt-30">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <h2 class="section-title after-line">{{ trans('admin/main.price_plans') }}</h2>
                                             <button id="webinarAddTicket" type="button" class="btn btn-primary btn-sm mt-3">{{ trans('admin/main.add_price_plan') }}</button>
@@ -601,7 +601,7 @@
                                                 @endif
                                             </div>
                                         </div>
-                                    </section>
+                                    </section> -->
 
 
                                     @include('admin.webinars.create_includes.contents')
