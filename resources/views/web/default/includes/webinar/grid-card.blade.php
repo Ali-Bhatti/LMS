@@ -48,7 +48,7 @@
             </div>
 
             <a href="{{ $webinar->getUrl() }}">
-                <h3 class="mt-15 webinar-title font-weight-bold font-16 text-dark-blue">{{ clean($webinar->title,'title') }}</h3>
+                <h3 class="mt-15 webinar-title font-weight-bold font-16 text-dark-blue">{!! clean($webinar->title,'title') !!}</h3>
             </a>
 
             @if(!empty($webinar->category))
