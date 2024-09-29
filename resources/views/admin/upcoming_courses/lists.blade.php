@@ -117,8 +117,8 @@
                                         <option value="newest" @if(request()->get('sort', null) == 'newest') selected="selected" @endif>{{ trans('public.newest') }}</option>
                                         <option value="earliest_publish_date" @if(request()->get('sort', null) == 'earliest_publish_date') selected="selected" @endif>{{ trans('update.earliest_publish_date') }}</option>
                                         <option value="farthest_publish_date" @if(request()->get('sort', null) == 'farthest_publish_date') selected="selected" @endif>{{ trans('update.farthest_publish_date') }}</option>
-                                        <option value="highest_price" @if(request()->get('sort', null) == 'highest_price') selected="selected" @endif>{{ trans('update.highest_price') }}</option>
-                                        <option value="lowest_price" @if(request()->get('sort', null) == 'lowest_price') selected="selected" @endif>{{ trans('update.lowest_price') }}</option>
+                                        <!-- <option value="highest_price" @if(request()->get('sort', null) == 'highest_price') selected="selected" @endif>{{ trans('update.highest_price') }}</option>
+                                        <option value="lowest_price" @if(request()->get('sort', null) == 'lowest_price') selected="selected" @endif>{{ trans('update.lowest_price') }}</option> -->
                                         <option value="only_not_released_courses" @if(request()->get('sort', null) == 'only_not_released_courses') selected="selected" @endif>{{ trans('update.only_not_released_courses') }}</option>
                                     </select>
                                 </div>
@@ -207,7 +207,7 @@
                                         <th class="text-left">{{trans('admin/main.title')}}</th>
                                         <th class="text-left">{{trans('admin/main.instructor')}}</th>
                                         <th>{{trans('admin/main.type')}}</th>
-                                        <th>{{trans('admin/main.price')}}</th>
+                                        <!-- <th>{{trans('admin/main.price')}}</th> -->
                                         <th>{{trans('update.followers')}}</th>
                                         <th>{{trans('admin/main.start_date')}}</th>
                                         <th>{{trans('admin/main.created_at')}}</th>
@@ -232,7 +232,7 @@
 
                                             <td class="">{{ trans('admin/main.'.$upcomingCourse->type) }}</td>
 
-                                            <td>
+                                            <!-- <td>
                                                 @if(!empty($upcomingCourse->price) and $upcomingCourse->price > 0)
                                                     <span class="mt-0 mb-1">
                                                         {{ handlePrice($upcomingCourse->price, true, true) }}
@@ -240,7 +240,7 @@
                                                 @else
                                                     {{ trans('public.free') }}
                                                 @endif
-                                            </td>
+                                            </td> -->
 
                                             <td class="font-12">
                                                 <a href="{{ getAdminPanelUrl('/upcoming_courses/'. $upcomingCourse->id .'/followers') }}" target="_blank" class="">{{ $upcomingCourse->followers_count }}</a>

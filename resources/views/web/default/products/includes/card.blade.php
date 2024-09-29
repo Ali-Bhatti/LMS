@@ -51,7 +51,7 @@
             @include('web.default.includes.webinar.rate',['rate' => $product->getRate()])
 
 
-            <div class="product-price-box mt-25">
+            <!-- <div class="product-price-box mt-25">
                 @if(!empty($isRewardProducts) and !empty($product->point))
                     <span class="text-warning real font-14">{{ $product->point }} {{ trans('update.points') }}</span>
                 @elseif($product->price > 0)
@@ -64,7 +64,7 @@
                 @else
                     <span class="real">{{ trans('public.free') }}</span>
                 @endif
-            </div>
+            </div> -->
         </figcaption>
     </figure>
 </div>

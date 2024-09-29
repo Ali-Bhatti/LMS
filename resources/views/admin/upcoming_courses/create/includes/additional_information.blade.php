@@ -53,7 +53,7 @@
             @enderror
         </div>
 
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label class="input-label">{{ trans('public.price') }} ({{ $currency }})</label>
             <input type="text" name="price" value="{{ (!empty($upcomingCourse) and !empty($upcomingCourse->price)) ? convertPriceToUserCurrency($upcomingCourse->price) : old('price') }}" class="form-control @error('price')  is-invalid @enderror"/>
             @error('price')
@@ -61,7 +61,7 @@
                 {{ $message }}
             </div>
             @enderror
-        </div>
+        </div> -->
 
         <div class="form-group">
             <label class="input-label">{{ trans('public.duration') }} ({{ trans('public.minutes') }})</label>

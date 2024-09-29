@@ -167,10 +167,10 @@
                                         </div>
                                     @endif
 
-                                    <div class="d-flex align-items-start flex-column mt-20 mr-15">
+                                    <!-- <div class="d-flex align-items-start flex-column mt-20 mr-15">
                                         <span class="stat-title">{{ trans('public.price') }}:</span>
                                         <span class="stat-value">{{ (!empty($upcomingCourse->price)) ? handlePrice($upcomingCourse->price) : trans('public.free') }}</span>
-                                    </div>
+                                    </div> -->
 
                                     <div class="d-flex align-items-start flex-column mt-20 mr-15">
                                         <span class="stat-title">{{ trans('update.followers') }}:</span>

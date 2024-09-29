@@ -57,13 +57,13 @@
                 @endif
             </div>
 
-            <div class="webinar-price-box mt-25">
+            <!-- <div class="webinar-price-box mt-25">
                 @if(!empty($upcomingCourse->price) and $upcomingCourse->price > 0)
                     <span class="real">{{ handlePrice($upcomingCourse->price) }}</span>
                 @else
                     <span class="real font-14">{{ trans('public.free') }}</span>
                 @endif
-            </div>
+            </div> -->
         </figcaption>
     </figure>
 </div>
