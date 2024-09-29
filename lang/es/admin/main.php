@@ -528,7 +528,7 @@ return [
     'question_count' => 'Questions',
     'students_count' => 'Students',
     'average_grade' => 'Average Grade',
-    'grade' => 'Grade',
+    'grade' => 'Point',
     'quiz_date' => 'Quiz Date',
     'passed' => 'Passed',
     'certificates' => 'Certificates',
