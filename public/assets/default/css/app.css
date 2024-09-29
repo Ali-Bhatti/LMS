@@ -19612,18 +19612,18 @@ p {
 .quiz-form .question-multi-answers .answer-item .image-container:hover:after {
   opacity: 1;
 }
-.quiz-form .question-multi-answers .answer-item input[type=radio] {
+.quiz-form .question-multi-answers .answer-item input[type=checkbox] {
   visibility: hidden;
   display: none;
   transition: all ease 0.3s;
 }
-.quiz-form .question-multi-answers .answer-item input[type=radio]:checked + .answer-label {
+.quiz-form .question-multi-answers .answer-item input[type=checkbox]:checked + .answer-label {
   box-shadow: 0 10px 30px 0 rgba(67, 212, 119, 0.3);
   border: solid 3px var(--primary);
   background-color: #ffffff;
   transition: all ease 0.3s;
 }
-.quiz-form .question-multi-answers .answer-item input[type=radio]:checked + .answer-label .image-container:after {
+.quiz-form .question-multi-answers .answer-item input[type=checkbox]:checked + .answer-label .image-container:after {
   opacity: 1;
 }
 

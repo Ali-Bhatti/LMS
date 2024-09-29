@@ -105,7 +105,7 @@
                                     <div class="question-multi-answers mt-35">
                                         @foreach($question->quizzesQuestionsAnswers as $key => $answer)
                                             <div class="answer-item">
-                                                <input id="asw-{{ $answer->id }}" type="radio" name="question[{{ $question->id }}][answer]" value="{{ $answer->id }}">
+                                                <input id="asw-{{ $answer->id }}" type="checkbox" name="question[{{ $question->id }}][answer][]" value="{{ $answer->id }}">
                                                 @if(!$answer->image)
                                                     <label for="asw-{{ $answer->id }}" class="answer-label font-16 text-dark-blue d-flex align-items-center justify-content-center">
                                                             <span class="answer-title">

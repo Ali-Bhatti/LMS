@@ -19,7 +19,7 @@ return [
     'question_count' => 'Question count',
     'students_count' => 'Students count',
     'average_grade' => 'Average grade',
-    'grades' => 'Grades',
+    'grades' => 'Points',
     'grade_date' => 'Grades Date',
     'certificate' => 'Certificate',
 

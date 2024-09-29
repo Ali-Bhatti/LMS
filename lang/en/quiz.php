@@ -17,7 +17,7 @@ return [
     'number_of_attemps' => 'Number of attempts',
     'attempts' => 'Attempts',
     'pass_mark' => 'Pass mark',
-    'grade' => 'Point',
+    'grade' => 'Points',
     'your_grade' => 'Your grade',
     'quiz_grade' => 'Quiz grade',
     'my_grade' => 'My grade',

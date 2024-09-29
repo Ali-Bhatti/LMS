@@ -565,9 +565,10 @@ class QuizController extends Controller
                     $status = '';
 
                     if (!empty($results)) {
-                        foreach ($results as $questionId => $result) {
+                        foreach ($results as $questionId => $selectedAnswers) {
+                            $selectedAnswers = $selectedAnswers['answer'];
 
-                            if (!is_array($result)) {
+                            if (!is_array($selectedAnswers)) {
                                 unset($results[$questionId]);
 
                             } else {
@@ -576,16 +577,17 @@ class QuizController extends Controller
                                     ->where('quiz_id', $quiz->id)
                                     ->first();
 
-                                if ($question and !empty($result['answer'])) {
-                                    $answer = QuizzesQuestionsAnswer::where('id', $result['answer'])
-                                        ->where('question_id', $question->id)
-                                        ->where('creator_id', $quiz->creator_id)
-                                        ->first();
+                                if ($question) {
+                                    $correctAnswers = QuizzesQuestionsAnswer::where('question_id', $question->id)
+                                        ->where('correct', true)
+                                        ->pluck('id')
+                                        ->toArray();
 
                                     $results[$questionId]['status'] = false;
                                     $results[$questionId]['grade'] = $question->grade;
 
-                                    if ($answer and $answer->correct) {
+                                    // Check if all correct answers are selected
+                                    if (empty(array_diff($correctAnswers, $selectedAnswers)) && count($selectedAnswers) == count($correctAnswers)) {
                                         $results[$questionId]['status'] = true;
                                         $totalMark += (int)$question->grade;
                                     }

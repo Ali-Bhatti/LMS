@@ -17,7 +17,7 @@ return [
     'number_of_attemps' => 'Número de intentos',
     'attempts' => 'Intentos',
     'pass_mark' => 'Marca de aprobación',
-    'grade' => 'Punto',
+    'grade' => 'Puntos',
     'your_grade' => 'Tu calificación',
     'quiz_grade' => 'Calificación de prueba',
     'my_grade' => 'Mi calificación',

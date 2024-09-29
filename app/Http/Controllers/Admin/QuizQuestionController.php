@@ -251,6 +251,7 @@ class QuizQuestionController extends Controller
         $quiz = Quiz::where('id', $data['quiz_id'])->first();
 
         if (!empty($quiz)) {
+            $creator = $quiz->creator;
             $quizQuestion = QuizzesQuestion::where('id', $id)
                 ->where('quiz_id', $quiz->id)
                 ->first();
@@ -299,7 +300,7 @@ class QuizQuestionController extends Controller
                                     'creator_id' => $creator->id,
                                     'image' => $answer['file'] ?? null,
                                     'correct' => isset($answer['correct']) ? true : false,
-                                    'created_at' => time()
+                                    'updated_at' => time()
                                 ]);
                             } else {
                                 $quizQuestionsAnswer = QuizzesQuestionsAnswer::create([
