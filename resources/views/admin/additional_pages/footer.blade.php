@@ -1,7 +1,7 @@
 @extends('admin.layouts.app')
 
 @php
-    $columns = ['first_column','second_column','third_column','forth_column']
+    $columns = ['first_column','second_column','third_column']
 @endphp
 
 @push('styles_top')
@@ -37,7 +37,7 @@
                                 @foreach($columns as $column)
                                     <div class="tab-pane mt-3 fade {{ $loop->iteration == 1 ? 'show active' : '' }}" id="{{ $column }}" role="tabpanel" aria-labelledby="{{ $column }}-tab">
                                         <div class="row">
-                                            <div class="col-12 col-md-6">
+                                            <div class="col-12 col-md-4">
                                                 <form action="{{ getAdminPanelUrl() }}/additional_page/footer/store" method="post">
                                                     {{ csrf_field() }}
 

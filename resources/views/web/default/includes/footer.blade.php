@@ -37,14 +37,14 @@
     </div>
 
     @php
-        $columns = ['first_column','second_column','third_column','forth_column'];
+        $columns = ['first_column','second_column','third_column'];
     @endphp
 
     <div class="container">
         <div class="row">
 
             @foreach($columns as $column)
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-4">
                     @if(!empty($footerColumns[$column]))
                         @if(!empty($footerColumns[$column]['title']))
                             <span class="header d-block text-white font-weight-bold">{{ $footerColumns[$column]['title'] }}</span>
@@ -61,7 +61,7 @@
 
         </div>
 
-        <div class="mt-40 border-blue py-25 d-flex align-items-center justify-content-between">
+        <div class="mt-40 py-25 d-flex align-items-center justify-content-between">
             <div class="footer-logo">
                 <a href="/">
                     @if(!empty($generalSettings['footer_logo']))
