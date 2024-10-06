@@ -4402,15 +4402,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary-inverted {
-  color: var(--primary-btn-color-hover);
-  background-color: #ffffff;
-  border-color: var(--primary-border-hover);
-  box-shadow: var(--primary-btn-shadow-hover);
+  color: var(--dark) !important;
+  background-color: #ffffff !important;
+  border-color: var(--primary-border-hover) !important;
+  box-shadow: var(--primary-btn-shadow-hover) !important;
   transition: all 0.3s;
 }
 .btn-primary-inverted:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled):active {
-  border-color: var(--primary-btn-color-hover);
-  box-shadow: var(--primary-btn-shadow);
+  border-color: var(--primary-btn-color-hover) !important;
+  box-shadow: var(--primary-btn-shadow) !important;
   transition: all 0.3s;
 }
 

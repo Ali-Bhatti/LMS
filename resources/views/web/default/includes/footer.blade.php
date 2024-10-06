@@ -16,9 +16,8 @@
                         <strong>{{ trans('footer.join_us_today') }}</strong>
                         <!-- <span class="d-block mt-5 text-white">{{ trans('footer.subscribe_content') }}</span> -->
                     </div>
-                    <a href="https://discord.gg/DtbBc5aD" target="_blank" class="btn btn-primary-inverted rounded-pill">{{ trans('footer.discord_channel') }}</a>
-
-                    
+                    <a href="https://discord.gg/DtbBc5aD" target="_blank" style="color: #818894; background-color: #ffffff; box-shadow: 0 3px 8px 0 rgba(64, 213, 125, 0.3); transition: all 0.3s;" class="btn rounded-pill">
+                    {{ trans('footer.discord_channel') }}</a>
                 </div>
             </div>
         </div>
