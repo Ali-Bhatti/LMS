@@ -14,23 +14,11 @@
                 <div class=" footer-subscribe d-block d-md-flex align-items-center justify-content-between">
                     <div class="flex-grow-1">
                         <strong>{{ trans('footer.join_us_today') }}</strong>
-                        <span class="d-block mt-5 text-white">{{ trans('footer.subscribe_content') }}</span>
+                        <!-- <span class="d-block mt-5 text-white">{{ trans('footer.subscribe_content') }}</span> -->
                     </div>
-                    <div class="subscribe-input bg-white p-10 flex-grow-1 mt-30 mt-md-0">
-                        <form action="/newsletters" method="post">
-                            {{ csrf_field() }}
+                    <a href="https://discord.gg/DtbBc5aD" target="_blank" class="btn btn-primary-inverted rounded-pill">{{ trans('footer.discord_channel') }}</a>
 
-                            <div class="form-group d-flex align-items-center m-0">
-                                <div class="w-100">
-                                    <input type="text" name="newsletter_email" class="form-control border-0 @error('newsletter_email') is-invalid @enderror" placeholder="{{ trans('footer.enter_email_here') }}"/>
-                                    @error('newsletter_email')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                    @enderror
-                                </div>
-                                <button type="submit" class="btn btn-primary rounded-pill">{{ trans('footer.join') }}</button>
-                            </div>
-                        </form>
-                    </div>
+                    
                 </div>
             </div>
         </div>

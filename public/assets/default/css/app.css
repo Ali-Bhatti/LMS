@@ -4401,6 +4401,20 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+.btn-primary-inverted {
+  color: var(--primary-btn-color-hover);
+  background-color: #ffffff;
+  border-color: var(--primary-border-hover);
+  box-shadow: var(--primary-btn-shadow-hover);
+  transition: all 0.3s;
+}
+.btn-primary-inverted:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled):active {
+  border-color: var(--primary-btn-color-hover);
+  box-shadow: var(--primary-btn-shadow);
+  transition: all 0.3s;
+}
+
+
 .btn-primary {
   color: #ffffff;
   background-color: #43d477;
