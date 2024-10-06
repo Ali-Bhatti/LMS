@@ -23,8 +23,8 @@
             <label class="input-label d-block">{{ trans('panel.course_type') }}</label>
 
             <select name="type" class="custom-select @error('type')  is-invalid @enderror">
-                <option value="webinar" @if((!empty($upcomingCourse) and $upcomingCourse->type == 'webinar') or old('type') == \App\Models\Webinar::$webinar) selected @endif>{{ trans('webinars.webinar') }}</option>
-                <option value="course" @if((!empty($upcomingCourse) and $upcomingCourse->type == 'course') or old('type') == \App\Models\Webinar::$course) selected @endif>{{ trans('product.video_course') }}</option>
+                <!-- <option value="webinar" @if((!empty($upcomingCourse) and $upcomingCourse->type == 'webinar') or old('type') == \App\Models\Webinar::$webinar) selected @endif>{{ trans('webinars.webinar') }}</option>
+                <option value="course" @if((!empty($upcomingCourse) and $upcomingCourse->type == 'course') or old('type') == \App\Models\Webinar::$course) selected @endif>{{ trans('product.video_course') }}</option> -->
                 <option value="text_lesson" @if((!empty($upcomingCourse) and $upcomingCourse->type == 'text_lesson') or old('type') == \App\Models\Webinar::$textLesson) selected @endif>{{ trans('product.text_course') }}</option>
             </select>
 
