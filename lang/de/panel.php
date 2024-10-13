@@ -115,7 +115,7 @@
   'dashboard' => 'Armaturenbrett',
   'i_not_available' => 'Offline-Status aktivieren',
   'hi' => 'Hallo',
-  'have_event' => 'Sie haben :neue Ereignisse zählen',
+  'have_event' => 'Sie haben :count neue Ereignisse',
   'view_all_events' => 'Alle Veranstaltungen anzeigen',
   'account_balance' => 'Kontostand',
   'with_drawable' => 'Ausziehbar',
