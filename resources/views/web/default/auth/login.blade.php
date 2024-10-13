@@ -65,6 +65,7 @@
                         <span class="badge badge-circle-gray300 text-secondary d-inline-flex align-items-center justify-content-center">{{ trans('auth.or') }}</span>
                     </div>
 
+                    <!--
                     @if(!empty(getFeaturesSettings('show_google_login_button')))
                         <a href="/google" target="_blank" class="social-login mt-20 p-10 text-center d-flex align-items-center justify-content-center">
                             <img src="/assets/default/img/auth/google.svg" class="mr-auto" alt=" google svg"/>
@@ -77,16 +78,16 @@
                             <img src="/assets/default/img/auth/facebook.svg" class="mr-auto" alt="facebook svg"/>
                             <span class="flex-grow-1">{{ trans('auth.facebook_login') }}</span>
                         </a>
-                    @endif
+                    @endif -->
 
                     <div class="mt-30 text-center">
                         <a href="/forget-password" target="_blank">{{ trans('auth.forget_your_password') }}</a>
                     </div>
 
-                    <div class="mt-20 text-center">
+                    <!-- <div class="mt-20 text-center">
                         <span>{{ trans('auth.dont_have_account') }}</span>
                         <a href="/register" class="text-secondary font-weight-bold">{{ trans('auth.signup') }}</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
