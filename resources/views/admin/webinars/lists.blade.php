@@ -140,12 +140,12 @@
                                     <select name="sort" data-plugin-selectTwo class="form-control populate">
                                         <option value="">{{trans('admin/main.filter_type')}}</option>
                                         <option value="has_discount" @if(request()->get('sort') == 'has_discount') selected @endif>{{trans('admin/main.discounted_classes')}}</option>
-                                        <option value="sales_asc" @if(request()->get('sort') == 'sales_asc') selected @endif>{{trans('admin/main.sales_ascending')}}</option>
-                                        <option value="sales_desc" @if(request()->get('sort') == 'sales_desc') selected @endif>{{trans('admin/main.sales_descending')}}</option>
+                                        <!-- <option value="sales_asc" @if(request()->get('sort') == 'sales_asc') selected @endif>{{trans('admin/main.sales_ascending')}}</option>
+                                        <option value="sales_desc" @if(request()->get('sort') == 'sales_desc') selected @endif>{{trans('admin/main.sales_descending')}}</option> -->
                                         <!-- <option value="price_asc" @if(request()->get('sort') == 'price_asc') selected @endif>{{trans('admin/main.Price_ascending')}}</option>
                                         <option value="price_desc" @if(request()->get('sort') == 'price_desc') selected @endif>{{trans('admin/main.Price_descending')}}</option> -->
-                                        <option value="income_asc" @if(request()->get('sort') == 'income_asc') selected @endif>{{trans('admin/main.Income_ascending')}}</option>
-                                        <option value="income_desc" @if(request()->get('sort') == 'income_desc') selected @endif>{{trans('admin/main.Income_descending')}}</option>
+                                        <!-- <option value="income_asc" @if(request()->get('sort') == 'income_asc') selected @endif>{{trans('admin/main.Income_ascending')}}</option>
+                                        <option value="income_desc" @if(request()->get('sort') == 'income_desc') selected @endif>{{trans('admin/main.Income_descending')}}</option> -->
                                         <option value="created_at_asc" @if(request()->get('sort') == 'created_at_asc') selected @endif>{{trans('admin/main.create_date_ascending')}}</option>
                                         <option value="created_at_desc" @if(request()->get('sort') == 'created_at_desc') selected @endif>{{trans('admin/main.create_date_descending')}}</option>
                                         <option value="updated_at_asc" @if(request()->get('sort') == 'updated_at_asc') selected @endif>{{trans('admin/main.update_date_ascending')}}</option>
@@ -245,8 +245,8 @@
                                         <th class="text-left">{{trans('admin/main.title')}}</th>
                                         <th class="text-left">{{trans('admin/main.instructor')}}</th>
                                         <!-- <th>{{trans('admin/main.price')}}</th> -->
-                                        <th>{{trans('admin/main.sales')}}</th>
-                                        <th>{{trans('admin/main.income')}}</th>
+                                        <!-- <th>{{trans('admin/main.sales')}}</th>
+                                        <th>{{trans('admin/main.income')}}</th> -->
                                         <th>{{trans('admin/main.students_count')}}</th>
                                         <th>{{trans('admin/main.created_at')}}</th>
                                         @if($classesType == 'webinar')
@@ -285,7 +285,7 @@
                                                     {{ trans('public.free') }}
                                                 @endif
                                             </td> -->
-                                            <td>
+                                            <!-- <td>
                                                 <span class="text-primary mt-0 mb-1 font-weight-bold">
                                                     {{ $webinar->sales->count() }}
                                                 </span>
@@ -293,9 +293,9 @@
                                                 @if(!empty($webinar->capacity))
                                                     <div class="text-small font-600-bold">{{trans('admin/main.capacity')}} : {{ $webinar->getWebinarCapacity() }}</div>
                                                 @endif
-                                            </td>
+                                            </td> -->
 
-                                            <td>{{ handlePrice($webinar->sales->sum('total_amount')) }}</td>
+                                            <!-- <td>{{ handlePrice($webinar->sales->sum('total_amount')) }}</td> -->
 
                                             <td class="font-12">
                                                 <a href="{{ getAdminPanelUrl() }}/webinars/{{ $webinar->id }}/students" target="_blank" class="">{{ $webinar->sales->count() }}</a>
