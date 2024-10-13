@@ -27,12 +27,15 @@
                         </div>
 
                         <div class="col-12 col-lg-5 mt-10 mt-lg-0">
-                            <span class="font-weight-500 text-gray font-14">{!! truncate($notification->message, 150, true) !!}</span>
+                            <span class="font-weight-500 text-gray font-14">{!! $notification->message !!}</span>
                         </div>
+                        @php
+                            $escapedHtml = htmlspecialchars($notification->message, ENT_QUOTES);
+                        @endphp
 
                         <div class="col-12 col-lg-4 mt-10 mt-lg-0 text-right">
                             <button type="button" data-id="{{ $notification->id }}" id="showNotificationMessage{{ $notification->id }}" class="js-show-message btn btn-border-white @if(!empty($notification->notificationStatus)) seen-at @endif">{{ trans('public.view') }}</button>
-                            <input type="hidden" class="notification-message" value="{!! $notification->message !!}">
+                            <input type="hidden" class="notification-message" value="{!! $escapedHtml !!}">
                         </div>
                     </div>
                 </div>
