@@ -10,7 +10,7 @@ return [
 
     'course' => 'Curso',
     'courses' => 'Cursos',
-    'text_course' => 'Curso de Texto',
+    'text_course' => 'Curso',
   	'video_course' => 'Curso en Vídeo',
     'information' => 'Información',
     'content' => 'Contenido',

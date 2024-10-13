@@ -10,7 +10,7 @@ return [
 
     'course' => 'دورة',
     'courses' => 'دورات',
-    'text_course' => 'دورة كتابية',
+    'text_course' => 'دورة',
   	'video_course' => 'دورة فيديو',
     'information' => 'معلومات',
     'content' => 'محتوي',
