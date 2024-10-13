@@ -34,7 +34,7 @@ class ForgotPasswordController extends Controller
         ];
         try {
             Mail::send('web.default.auth.password_verify', $emailData, function ($message) use ($request) {
-                $message->from(!empty($generalSettings['site_email']) ? $generalSettings['site_email'] : env('MAIL_FROM_ADDRESS'));
+                $message->from(env('MAIL_FROM_ADDRESS'));
                 $message->to($request->input('email'));
                 $message->subject('Reset Password Notification');
             });
