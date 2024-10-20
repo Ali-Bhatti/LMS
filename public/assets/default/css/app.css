@@ -15340,10 +15340,10 @@ p {
   font-size: 16px;
 }
 .footer .footer-social img {
-  width: 24px;
+  width: 37px;
   min-width: 24px;
-  max-width: 24px;
-  height: 24px;
+  max-width: 100px;
+  height: 37px;
 }
 .footer .footer-logo {
   width: 170px;
@@ -19747,4 +19747,13 @@ p {
 
 .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
   opacity: 0.6 !important;
+}
+
+.note-btn {
+  color: #343434 !important; /* Change to a visible color */
+  background-color: #ffffff !important; /* Set a background color for the buttons */
+}
+
+.note-btn:hover {
+  background-color: #f0f0f0 !important; 
 }
