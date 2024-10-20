@@ -604,7 +604,7 @@
             </div>
         @endif
 
-        @if($homeSection->name == \App\Models\HomeSection::$find_instructors and !empty($findInstructorSection))
+        <!-- @if($homeSection->name == \App\Models\HomeSection::$find_instructors and !empty($findInstructorSection))
             <section class="home-sections home-sections-swiper container find-instructor-section position-relative">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6">
@@ -644,7 +644,7 @@
                     </div>
                 </div>
             </section>
-        @endif
+        @endif -->
 
         @if($homeSection->name == \App\Models\HomeSection::$reward_program and !empty($rewardProgramSection))
             <section class="home-sections home-sections-swiper container reward-program-section position-relative">
@@ -742,17 +742,28 @@
                     <div class="col-12 col-lg-6">
                         <div class="">
                             <h2 class="font-36 font-weight-bold text-dark">{{ $forumSection['title'] ?? '' }}</h2>
-                            <p class="font-16 font-weight-normal text-gray mt-10">{{ $forumSection['description'] ?? '' }}</p>
+                            <p class="font-16 font-weight-normal text-gray mt-10">{!! $forumSection['description'] ?? '' !!}</p>
 
                             <div class="mt-35 d-flex align-items-center">
-                                @if(!empty($forumSection['button1']) and !empty($forumSection['button1']['title']) and !empty($forumSection['button1']['link']))
-                                    <a href="{{ $forumSection['button1']['link'] }}" class="btn btn-primary mr-15">{{ $forumSection['button1']['title'] }}</a>
+                                <a href="{{ $forumSection['button1']['link'] }}" target="_blank" class="btn btn-primary discord-btn rounded">
+                                    <img src="assets/default/img/social/discord-1.svg" class="discord-icon" alt="Discord" style="width: 30px; height: 30px; margin-right: 15px;">
+                                    {{ $forumSection['button1']['title'] }}
+                                </a>
+                                <!-- @if(!empty($forumSection['button1']) and !empty($forumSection['button1']['title']) and !empty($forumSection['button1']['link']))
+                                    <a href="{{ $forumSection['button1']['link'] }}" class="btn btn-primary mr-15 discord-btn">
+                                        <img src="assets/default/img/social/discord-1.svg" class="discord-icon" alt="Discord" style="width: 30px; height: 30px; margin-right: 5px;">
+                                        {{ $forumSection['button1']['title'] }}
+                                    </a>
                                 @endif
 
                                 @if(!empty($forumSection['button2']) and !empty($forumSection['button2']['title']) and !empty($forumSection['button2']['link']))
-                                    <a href="{{ $forumSection['button2']['link'] }}" class="btn btn-outline-primary">{{ $forumSection['button2']['title'] }}</a>
-                                @endif
+                                    <a href="{{ $forumSection['button2']['link'] }}" class="btn btn-outline-primary discord-btn">
+                                        <img src="assets/default/img/social/discord.svg" class="discord-icon" alt="Discord" style="width: 30px; height: 30px; margin-right: 5px;">
+                                        {{ $forumSection['button2']['title'] }}
+                                    </a>
+                                @endif -->
                             </div>
+                            <!-- <iframe src="https://discord.com/widget?id=1285833694040559682&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
                         </div>
                     </div>
                 </div>
@@ -775,7 +786,7 @@
             </section>
         @endif
 
-        @if($homeSection->name == \App\Models\HomeSection::$instructors and !empty($instructors) and !$instructors->isEmpty())
+        <!-- @if($homeSection->name == \App\Models\HomeSection::$instructors and !empty($instructors) and !$instructors->isEmpty())
             <section class="home-sections container">
                 <div class="d-flex justify-content-between">
                     <div>
@@ -828,7 +839,7 @@
                     </div>
                 </div>
             </section>
-        @endif
+        @endif -->
 
         {{-- Ads Bannaer --}}
         @if($homeSection->name == \App\Models\HomeSection::$half_advertising_banner and !empty($advertisingBanners2) and count($advertisingBanners2))
