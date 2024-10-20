@@ -63,7 +63,7 @@
   'resend_code' => 'Code erneut senden',
   'verify_your_email_address' => 'Überprüfen Sie Ihre E-Mail-Adresse',
   'click_here' => 'klicken Sie hier',
-  'verification_link_has_been_sent_to_your_email' => 'Ein neuer Bestätigungslink wurde an Ihre E-Mail-Adresse gesendet.',
+  'verification_link_has_been_sent_to_your_email' => 'Um das Passwort zurückzusetzen, klicken Sie auf den folgenden Link.',
   'login_failed_your_account_is_not_verified' => 'Fehler bei der Anmeldung! Ihre E-Mail-Adresse/Telefonnummer wurde nicht bestätigt.',
   'logout' => 'Abmelden',
   'phone' => 'Telefon',

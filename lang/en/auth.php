@@ -84,7 +84,7 @@ return [
     'verify_your_email_address' => 'Verify Your Email Address',
     'click_here' => 'Click here',
 
-    'verification_link_has_been_sent_to_your_email' => 'New verification link has been sent to your email address.',
+    'verification_link_has_been_sent_to_your_email' => 'To reset the password click on the following link.',
 
     'login_failed_your_account_is_not_verified' => 'Login failed! Your email/phone not verified.',
     'logout' => 'Logout',
