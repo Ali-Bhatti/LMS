@@ -71,7 +71,7 @@ return [
     'resend_code' => 'اعد ارسال الكود',
     'verify_your_email_address' => 'التحقق من الايميل الخاص بك',
     'click_here' => 'اضغط هنا',
-    'verification_link_has_been_sent_to_your_email' => 'تم ارسال رابط التحقق للأيميل الحاص بك.',
+    'verification_link_has_been_sent_to_your_email' => 'لإعادة تعيين كلمة المرور انقر على الرابط التالي.',
     'login_failed_your_account_is_not_verified' => 'فشل تسجيل الدخول لم يتم التحقق من رقم الموبايل او الايميل.',
     'logout' => 'خروج',
     'phone' => 'هاتف'
