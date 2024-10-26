@@ -26,7 +26,7 @@ Common Issues Found:
 5. Run `composer install` to install all the required packages.
 6. Run `php artisan key:generate` to generate the application key.
 7. Open **PHPMyAdmin**.
-8. Download the DB DUMP from this [link](https://drive.google.com/file/d/1Ov5CLIhuuwDQ72-uKbzXKgGhUfjtiOTf/view?usp=sharing).
+8. Download the DB DUMP from this [link]([https://drive.google.com/file/d/1Ov5CLIhuuwDQ72-uKbzXKgGhUfjtiOTf/view?usp=sharing](https://drive.google.com/file/d/1a3YdKhdpM_6zd-EcKzAerGYnDuWsIbGb/view?usp=sharing)).
 9. Import the DB DUMP into your local DB using **PHPMyAdmin**.
 10. Run `php artisan serve` to start the server.
 11. Open your browser and navigate to `http://localhost:8000` to access the application.
