@@ -21,8 +21,7 @@ Common Issues Found:
 2. Open the project in VS Code.
 3. Open the terminal in VS Code (or any terminal) and run `composer global require laravel/installer` to install Laravel globally.
 4. Access the env files from here:  
-   - [env file for local](https://drive.google.com/file/d/1OL7x-_uv0xmjMVXdfovIgQE7_-zvTdyG/view?usp=sharing)  
-   - [env file for prod](https://drive.google.com/file/d/113ouePBZBAu9BoJQaLF7keNVamG4783F/view?usp=sharing)
+   - [env file for local](https://drive.google.com/file/d/1OL7x-_uv0xmjMVXdfovIgQE7_-zvTdyG/view?usp=sharing)
 5. Run `composer install` to install all the required packages.
 6. Run `php artisan key:generate` to generate the application key.
 7. Open **PHPMyAdmin**.
